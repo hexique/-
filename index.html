@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>????</title>
+</head>
+<style>
+
+</style>
+<body>
+    <div id="features">
+
+        <p><b>????</b> через<br></p>
+
+        <h1 id="time"></h1>
+
+        <div id="video"></div>
+
+        
+
+        <div class="accordion" id="faq">
+            <h2>FAQ</h2>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <font class="accordion-font">чё это</font>
+                    <span class="arrow"><font class="accordion-font">▼</font></span>
+                </div>
+                <div class="accordion-content">
+                    <p><a href="https://youtu.be/WIYeRGbaXf8" target="_blank">https://youtu.be/WIYeRGbaXf8</a>, <a href="https://t.me/hexigd/1196" target="_blank">t.me/hexigd/1196</a> читай</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <font class="accordion-font">когда это</font>
+                    <span class="arrow"><font class="accordion-font">▼</font></span></font>
+                </div>
+                <div class="accordion-content">
+                    <p>12 Января 2026 в 20:14 по МСК</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <font class="accordion-font">как это скрыть</font>
+                    <span class="arrow"><font class="accordion-font">▼</font></span>
+                </div>
+                <div class="accordion-content">
+                    <button onclick="hidefaq()">нажми сюда</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    function toggleAccordion(header) {
+        const content = header.nextElementSibling;
+        const arrow = header.querySelector('.arrow');
+
+        document.querySelectorAll('.accordion-content.open').forEach(item => {
+            if (item !== content) {
+                item.classList.remove('open');
+                item.previousElementSibling.querySelector('.arrow').classList.remove('open');
+            }
+        });
+
+        content.classList.toggle('open');
+        arrow.classList.toggle('open');
+    }
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+body{
+  background-color: #1e1e1e;
+}
+
+#features{
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+input{
+  background-color: #1e1e1e;
+  color: #ffff;
+  border: solid;
+  border-width: 0.01em;
+  border-radius: 5px;
+  font-family: Arial;
+  font-size: 1.5em;
+}
+
+p{
+  color: #808080;
+  font-family: Arial;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+a{
+  color: #ffff;
+  text-decoration: #ffff;
+  font-family: Arial;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+h1{
+  color: #ffff;
+  font-family: Arial;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+h2{
+  color: #ffff;
+  font-family: Arial;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+h3{
+  color: #ffff;
+  font-family: Arial;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+label{
+  color: #ffff;
+  font-family: Arial;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+button{
+  margin-top: 15px;
+  color: #ffff;
+  background-color: #1e1e1e;
+  border-color: #ffff;
+  font-size: 1.5em;
+  padding: 10px 15px;
+  border-width: 0.01em;
+  border-radius: 5px;
+  border: solid;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+button:hover{
+  color: #1e1e1e;
+  background-color: #ffff;
+  border-color: #ffff;
+}
+
+.green{
+  color: #00ff00
+}
+
+.black{
+  color: #535353
+}
+
+.hide{
+  color: #00000000
+}
+
+.accordion-font{
+  color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.accordion {
+    width: 300px;
+    margin: 20px;
+}
+
+.accordion-item {
+    border: 1px solid #1b1b1b;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.accordion-header {
+    padding: 15px;
+    background-color: #1b1b1b;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.accordion-content {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #1b1b1b;
+}
+
+.accordion-content.open {
+    padding: 15px;
+    max-height: 200px; /* Можно увеличить при необходимости */
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow.open {
+    transform: rotate(180deg);
+}
